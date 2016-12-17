@@ -2,7 +2,7 @@
 	displayBlock="true" xmlns="sap.m">
 	<App>
 		<pages>
-			<Page title="{i18n>title}">
+			<Page title="{i18n>titleIII}">
 				<content></content>
 			</Page>
 		</pages>
