@@ -1,11 +1,11 @@
-# zapp_01
-
 https://github.com/FeiyunWu/zapp_01
-all right from SAP
+
+
 push by http://localhost:8080/webide/index.html
 
 fei999northwind
 https://account.hanatrial.ondemand.com/
+
 link:http://www.sap.com/developer/tutorials/hcp-create-destination.html
 
 fei999i18n
@@ -24,6 +24,7 @@ http://services.odata.org/V2/Northwind/Northwind.svc/Products?$format=json
 http://services.odata.org/V2/Northwind/Northwind.svc/Products
 
 only first 2:$top=2
+
 http://services.odata.org/V2/Northwind/Northwind.svc/Products?$format=json&$top=2
 
 no need first 5 columns,got 2 columns:
