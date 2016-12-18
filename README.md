@@ -1,4 +1,4 @@
-@all right resived by SAP.
+©  all right resived by SAP.
 
 https://github.com/FeiyunWu/zapp_01
 
@@ -61,6 +61,3 @@ OData tutorial: http://www.odata.org/getting-started/basic-tutorial/
 OData URI conventions: http://www.odata.org/documentation/odata-version-2-0/uri-conventions/
 OData viewer and query builder: http://pragmatiqa.com/xodata/
 To use the OData viewer, select Metadata URL under Choose Access Option and enter http://services.odata.org/V2/Northwind/Northwind.svc/$metadata
-
-
-
