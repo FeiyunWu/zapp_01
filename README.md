@@ -1,3 +1,5 @@
+@all right resived by SAP.
+
 https://github.com/FeiyunWu/zapp_01
 
 
@@ -12,7 +14,7 @@ fei999i18n
 {i18n>title}===file(i18n.properties)  title=Titleini18n.
 
 
-fei999odata
+fei999odata:case sensetive.
 1.http://services.odata.org/V2/Northwind/Northwind.svc/Products
 
 at the end:?$skiptoken=20
@@ -45,14 +47,20 @@ $filter=Discontinued eq false and UnitPrice gt 100. Here, gt stands for “great
 http://services.odata.org/V2/Northwind/Northwind.svc/Products?$format=json&$orderby=ProductName&$filter=Discontinued%20eq%20false%20and%20UnitPrice%20gt%20100
 http://services.odata.org/V2/Northwind/Northwind.svc/Products?$format=json&$orderby=ProductName&$filter=Discontinued%20eq%20false%20and%20UnitPrice%20gt%20100
 
+$select only 2 fields.
+http://services.odata.org/V2/Northwind/Northwind.svc/Products?$format=json&$select=ProductName,UnitPrice
 
+$expand=Supplier{is the key},return the added fields
+http://services.odata.org/V2/Northwind/Northwind.svc/Products?$format=json&$select=ProductName,UnitPrice,Supplier&$expand=Supplier
 
+$expand no use situation.
+http://services.odata.org/V2/Northwind/Northwind.svc/Products?$format=json&$select=ProductName,UnitPrice,Supplier&$expand=ProductName
 
-
-
-
-
-
+fei999odata#document
+OData tutorial: http://www.odata.org/getting-started/basic-tutorial/
+OData URI conventions: http://www.odata.org/documentation/odata-version-2-0/uri-conventions/
+OData viewer and query builder: http://pragmatiqa.com/xodata/
+To use the OData viewer, select Metadata URL under Choose Access Option and enter http://services.odata.org/V2/Northwind/Northwind.svc/$metadata
 
 
 
