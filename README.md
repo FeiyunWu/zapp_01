@@ -35,3 +35,24 @@ http://services.odata.org/V2/Northwind/Northwind.svc/Products?$format=json&$top=
 
 sorted by descending:%20desc=[space]desc
 http://services.odata.org/V2/Northwind/Northwind.svc/Products?$format=json&$top=2&$orderby=ProductName%20desc
+
+
+fei999filter:$filter=Discontinued%20eq%20true=[space]eq[space]conditon
+http://services.odata.org/V2/Northwind/Northwind.svc/Products?$format=json&$orderby=ProductName&$filter=Discontinued%20eq%20true
+
+$filter=Discontinued eq false and UnitPrice gt 100. Here, gt stands for “greater than”.
+
+http://services.odata.org/V2/Northwind/Northwind.svc/Products?$format=json&$orderby=ProductName&$filter=Discontinued%20eq%20false%20and%20UnitPrice%20gt%20100
+http://services.odata.org/V2/Northwind/Northwind.svc/Products?$format=json&$orderby=ProductName&$filter=Discontinued%20eq%20false%20and%20UnitPrice%20gt%20100
+
+
+
+
+
+
+
+
+
+
+
+
