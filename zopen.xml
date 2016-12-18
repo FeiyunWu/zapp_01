@@ -1,0 +1,17 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns="sap.m">
+	<l:Grid defaultSpan="L12 M12 S12" id="productFragment" width="auto">
+		<l:content>
+			<f:SimpleForm columnsL="1" columnsM="1" editable="false" emptySpanL="4" emptySpanM="4" labelSpanL="3" labelSpanM="3"
+				layout="ResponsiveGridLayout" maxContainerCols="2" minWidth="1024" title="{i18n>tab_product_sub_title}">
+				<f:content>
+					<Label text="{i18n>label_CategoryID}"/>
+					<Text text="{CategoryID}"/>
+					<Label text="{i18n>label_ReorderLevel}"/>
+					<Text text="{ReorderLevel}"/>
+					<Label text="{i18n>label_Discontinued}"/>
+					<Text text="{Discontinued}"/>
+				</f:content>
+			</f:SimpleForm>
+		</l:content>
+	</l:Grid>
+</core:FragmentDefinition>

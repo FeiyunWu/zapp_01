@@ -1,9 +1,26 @@
-<mvc:View controllerName="zapp02_ns.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
-	displayBlock="true" xmlns="sap.m">
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="zapp02_ns.controller.View1" displayBlock="true">
 	<App>
 		<pages>
-			<Page title="{i18n>titleIII}">
-				<content></content>
+			<Page title="{i18n>title}">
+				<content>
+				    <Input width="100%" id="__input0"/>
+				    <IconTabHeader selectedKey="__filter2" id="__header0">
+				        <items>
+				            <IconTabFilter text="Orders" count="22" showAll="true" id="__filter2">
+				                <content>
+				                    <List noDataText="无数据" id="__list0">
+				                        <items>
+				                            <StandardListItem title="List Item 1" id="__item0"/>
+				                            <StandardListItem title="List Item 2" id="__item1"/>
+				                            <StandardListItem title="List Item 3" id="__item2"/></items>
+				                    </List>
+				                </content>
+				            </IconTabFilter>
+				            <IconTabFilter text="zopen" count="10" icon="sap-icon://technical-object" iconColor="Critical" id="__filter_zopen"/>
+				            <IconTabFilter text="Shipped" count="5" icon="sap-icon://shipping-status" iconColor="Positive" id="__filter4"/></items>
+				    </IconTabHeader>
+				    <Button text="Button_text" width="100px" id="__button0"/>
+				</content>
 			</Page>
 		</pages>
 	</App>
