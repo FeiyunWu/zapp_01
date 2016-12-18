@@ -23,4 +23,14 @@ at the end:?$skiptoken=20
 http://services.odata.org/V2/Northwind/Northwind.svc/Products?$format=json
 http://services.odata.org/V2/Northwind/Northwind.svc/Products
 
+only first 2:$top=2
+http://services.odata.org/V2/Northwind/Northwind.svc/Products?$format=json&$top=2
 
+no need first 5 columns,got 2 columns:
+http://services.odata.org/V2/Northwind/Northwind.svc/Products?$format=json&$top=2&$skiptoken=5
+
+sorted  by product id default,now sorted by product name,got first 2 rows:&$orderby=ProductName
+http://services.odata.org/V2/Northwind/Northwind.svc/Products?$format=json&$top=2&$orderby=ProductName
+
+sorted by descending:%20desc=[space]desc
+http://services.odata.org/V2/Northwind/Northwind.svc/Products?$format=json&$top=2&$orderby=ProductName%20desc
