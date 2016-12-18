@@ -14,7 +14,13 @@ fei999i18n
 
 fei999odata
 1.http://services.odata.org/V2/Northwind/Northwind.svc/Products
+
 at the end:?$skiptoken=20
 </entry>
   <link rel="next" href="http://services.odata.org/V2/Northwind/Northwind.svc/Products?$skiptoken=20" />
 </feed>
+
+http://services.odata.org/V2/Northwind/Northwind.svc/Products?$format=json
+http://services.odata.org/V2/Northwind/Northwind.svc/Products
+
+
